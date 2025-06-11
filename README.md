@@ -18,6 +18,7 @@
 
 3️⃣ User Customization
 📏 Length → Choose between 8-128 characters.
+Delete README.md
 
 🛠 Character Types → Toggle uppercase, digits, symbols on/off.
 
