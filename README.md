@@ -74,3 +74,66 @@ Sort by Due Date: This will list all tasks, sorted by their due dates.
 
 
 
+CALCULATOR:
+Welcome & First Number Input 👋🔢
+
+The calculator greets the user (implicitly, by asking for the first number).
+It prompts the user to enter their first number.
+The program then waits for the user to type in a number (e.g., 10) and press Enter.
+Behind the scenes, it tries to convert this input into a decimal number (a float) so it can be used in calculations.
+Example: If you type 5, the computer understands it as 5.0.
+Second Number Input ➡️🔢
+
+Next, the calculator asks for the second number.
+Again, it waits for the user's input (e.g., 3).
+This input is also converted into a float.
+Example: If you type 2.5, the computer understands it as 2.5.
+Operation Choice Display ➕➖✖️➗
+
+Now, it's time to choose what to do with the numbers!
+The calculator presents a menu of available operations to the user. This makes it clear what options are supported.
+Typically, it will show:
+"1. Addition (+)"
+"2. Subtraction (-)"
+"3. Multiplication (*)"
+"4. Division (/)"
+User Selects Operation 🤔✍️
+
+The calculator then prompts the user to enter their choice for the operation (e.g., by typing +, -, *, or /).
+The program awaits this input.
+Performing the Calculation (The Brains of the Operation!) 🧠💡
+
+This is where the magic happens! ✨
+The program uses conditional logic (like if, elif, else statements) to figure out which operation the user picked.
+Case 1: Addition (+) 🥳
+If the user entered +, the calculator performs first_number + second_number.
+Example: 5.0+2.5=7.5
+Case 2: Subtraction (-) 🙁
+If the user entered -, the calculator performs first_number - second_number.
+Example: 5.0−2.5=2.5
+Case 3: Multiplication (*) 🌟
+If the user entered *, the calculator performs first_number * second_number.
+Example: 5.0∗2.5=12.5
+Case 4: Division (/) ➗⚠️
+If the user entered /, there's a crucial extra check!
+The calculator first asks: "Is the second_number (the divisor) equal to zero?"
+If Yes (Zero): 🛑 It immediately stops the division and displays an "Error: Division by zero is not allowed." message. This prevents the program from crashing!
+If No (Not Zero): ✅ It proceeds with first_number / second_number.
+Example: 5.0/2.5=2.0
+Case 5: Invalid Operation 🚫🚨
+If the user enters anything other than +, -, *, or / (e.g., x or abc), the calculator doesn't know what to do.
+It displays an "Error: Invalid operation choice." message.
+Displaying the Result (or Error) 🎉❌
+
+Finally, the calculator provides the output!
+If the calculation was successful: It clearly prints the numbers, the operation, and the final result.
+Example: "The result of 5.0+2.5 is: 7.5"
+If there was an error (invalid input or division by zero): It displays the appropriate error message so the user knows what went wrong.
+Error Handling (Safety Net) 🛡️🐞
+
+Throughout the process, especially when converting user input to numbers, the calculator has a "safety net" called try-except.
+try block: It attempts to perform the main operations (getting input, doing calculations).
+except ValueError: If the user types something that can't be converted into a number (like "hello" instead of "5"), this catches that specific error and prints an "Error: Invalid input. Please enter valid numbers." message, preventing the program from crashing. 🙅‍♀️
+except Exception as e: This is a general safety net for any other unexpected issues that might arise, catching them and displaying a generic error message, just in case! 🐛
+
+
