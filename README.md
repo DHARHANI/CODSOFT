@@ -221,4 +221,43 @@ This game is simple but addictive! Who will reign supreme - you or the machine? 
 
 
 
+CONTACT BOOK:
+📥 Adding a Contact
+
+Enter name, phone, email, and address.
+
+The contact is stored in a list.
+
+📋 Viewing Contacts
+
+Displays all contacts in a numbered list.
+
+Shows name and phone number for quick reference.
+
+🔍 Searching Contacts
+
+Search by name or phone number.
+
+Displays full details if found.
+
+✏️ Updating a Contact
+
+Select a contact from the list.
+
+Modify any field (press Enter to keep old value).
+
+❌ Deleting a Contact
+
+Choose a contact to remove.
+
+Confirms deletion.
+
+🚪 Exiting the Program
+
+Type 6 to close the application.
+
+
+
+
+
 
